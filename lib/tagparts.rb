@@ -39,7 +39,7 @@ module TagParts
             e.to_s
           end
         }
-        "<#{@tag}#{make_attr_str}\n>#{body}</#{@tag}>\n"
+        "<#{@tag}#{make_attr_str}\n>#{body.join}</#{@tag}>\n"
       else
         "<#{@tag}#{make_attr_str} /\n>"
       end
